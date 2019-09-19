@@ -1,14 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
-
-import os
-import pandas as pd
-from operator import add
-from functools import reduce
 import tensorflow as tf
 from tensorflow import keras
-import numpy as np
-
 
 def printAllWeights(model):
     for layer in model.layers:
@@ -41,8 +34,5 @@ print("pred started")
 predictions = model.predict_proba([test2dList])
 
 print(predictions)
-
-
-
 
 
